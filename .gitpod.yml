@@ -1,6 +1,7 @@
 tasks:
-  - command: wget -O- https://julialang-s3.julialang.org/bin/linux/x64/1.6/julia-1.6.1-linux-x86_64.tar.gz | sudo tar zxf - -C /usr/local --strip-components=1
-
+  - command: >-
+      wget -O- https://julialang-s3.julialang.org/bin/linux/x64/1.6/julia-1.6.1-linux-x86_64.tar.gz | sudo tar zxf - -C /usr/local --strip-components=1 &&
+      /usr/local/bin/julia -e 'using Pkg; Pkg.add("Symbolics"); Pkg.add("SymbolicUtils")'
 vscode:
   extensions:
     - julialang.language-julia@1.1.38:8dbcc64f4ee5637efe640d645ce4cf21

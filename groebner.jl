@@ -1,4 +1,5 @@
 using Symbolics
+import SymbolicUtis:Mul,Add
 
 function lex(m::Mul, n::Mul)::Bool
 
@@ -16,7 +17,7 @@ function grevlex(m::Mul, n::Mul)::Bool
     
 end
 
-function leading_term(m::Add, ord::Function=lex)::Mull
+function leading_term(m::Add, ord::Function=lex)::Mul
 
 end
 
