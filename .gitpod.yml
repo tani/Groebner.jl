@@ -1,0 +1,7 @@
+tasks:
+  - command: wget -O- https://julialang-s3.julialang.org/bin/linux/x64/1.6/julia-1.6.1-linux-x86_64.tar.gz | sudo tar zxf - -C /usr/local --strip-components=1
+
+vscode:
+  extensions:
+    - julialang.language-julia@1.1.38:8dbcc64f4ee5637efe640d645ce4cf21
+    - vscode.julia@1.56.0:bf6543fcb95be607399312d866d46d74
